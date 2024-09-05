@@ -18,7 +18,7 @@ public class Largest_of_Three {
 
         // Finding the largest number
         int num = 0;
-        for (int i = 0; i <= numbers.length - 1; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] > num) num = numbers[i];
         }
 
