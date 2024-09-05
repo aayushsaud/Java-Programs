@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Check_Leap_Year {
+public class Leap_Year_Checker {
     public static void main(String[] args) {
         // Creating a scanner object to take user input
         Scanner scanner = new Scanner(System.in);
