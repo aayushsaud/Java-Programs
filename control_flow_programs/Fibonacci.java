@@ -19,7 +19,6 @@ public class Fibonacci {
             first = second;
             second = next;
         }
-
         scanner.close();
     }
 }
