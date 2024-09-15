@@ -14,8 +14,8 @@ public class Greatest_Common_Divisor {
         int num = (num1 < num2) ? num1 : num2;
 
         int GCD = 0;
-        
-        // Finding the Greatest Common Multiple
+
+        // Finding the Greatest Common Divisor
         for (int i = 1; i <= num; i++) {
             if (num1 % i == 0 && num2 % i == 0) {
                 GCD = i;
