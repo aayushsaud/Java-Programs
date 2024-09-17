@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Greatest_Common_Divisor {
+public class Lowest_Common_Multiple{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,17 +11,15 @@ public class Greatest_Common_Divisor {
         System.out.print("Enter Second Number: ");
         int num2 = scanner.nextInt();
 
-        int num = (num1 < num2) ? num1 : num2;
+        int num = (num1 > num2) ? num1 : num2;
 
-        int GCD = 0;
-
-        // Finding the Greatest Common Divisor
-        for (int i = 1; i <= num; i++) {
-            if (num1 % i == 0 && num2 % i == 0) {
-                GCD = i;
-            }
+        int LCM = 0;
+        
+        // Finding the Lowest Common Multiple
+        while (!(LCM % num1 == 0 && LCM % num2 == 0)) {
+            LCM += num;
         }
-        System.out.println("Greatest Common Divisor for " + num1 + " and " + num2 + " is " + GCD + "!");
+        System.out.println("Lowest Common Multiple between " + num1 + " and " + num2 + " is " + LCM + "!");
 
         scanner.close();
     }
