@@ -13,13 +13,13 @@ public class Lowest_Common_Multiple{
 
         int num = (num1 > num2) ? num1 : num2;
 
-        int LCM = 0;
+        int LCM = num;
         
         // Finding the Lowest Common Multiple
         while (!(LCM % num1 == 0 && LCM % num2 == 0)) {
             LCM += num;
         }
-        System.out.println("Lowest Common Multiple between " + num1 + " and " + num2 + " is " + LCM + "!");
+        System.out.println("Lowest Common Multiple for " + num1 + " and " + num2 + " is " + LCM + "!");
 
         scanner.close();
     }
