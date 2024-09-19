@@ -15,8 +15,6 @@ public class Check_if_Palindrome {
             reversed += input.charAt(i);
         }
 
-        System.out.println(input + reversed);
-
         // Checking if the String is a Palindrome
         if (input.equals(reversed))System.out.println(input + " is a Palindrome!");
         else System.out.println(input + " is not a Palindrome!");
