@@ -19,4 +19,5 @@ public class Fizz_Buzz {
             System.out.println(number);
 
         scanner.close();
+    }
 }
