@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Vowels_and_Consonants_in_String {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
