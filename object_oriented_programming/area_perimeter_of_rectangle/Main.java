@@ -1,4 +1,4 @@
-package object_oriented_programming.area_of_rectangle;
+package object_oriented_programming.area_perimeter_of_rectangle;
 
 import java.util.Scanner;
 
