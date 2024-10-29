@@ -1,4 +1,4 @@
-package object_oriented_programming.animal;
+package object_oriented_programming.animal_class_hierachy;
 
 // Dog class derived from Animal
 public class Dog extends Animal {

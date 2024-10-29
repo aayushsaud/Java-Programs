@@ -1,4 +1,4 @@
-package object_oriented_programming.animal;
+package object_oriented_programming.animal_class_hierachy;
 
 // Superclass for all animals
 public class Animal {
