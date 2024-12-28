@@ -5,16 +5,18 @@ public class Print_Numbers_Till_N {
         Scanner scanner = new Scanner(System.in);
 
         // Prompting the user for the number till which the program needs to print
-        System.out.print("Enter a Number: ");
+        System.out.print("Enter a positive number: ");
         int number = scanner.nextInt();
 
-        printNumbersTill(number);
+        printNumbersTill(1, number);
 
         scanner.close();
     }
-    public static void printNumbersTill(int number) {
-        if (number <= 0) return;
-        printNumbersTill(number - 1); // Back-tracking prints from 1
-        System.out.println(number);
+
+    // Recursive method to print numbers from currentNumber to maxNumber
+    public static void printNumbersTill(int currentNumber, int maxNumber) {
+        if (currentNumber > maxNumber) return;
+        System.out.println(currentNumber);
+        printNumbersTill(currentNumber + 1, maxNumber);
     }
 }
