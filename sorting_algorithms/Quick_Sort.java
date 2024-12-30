@@ -1,3 +1,11 @@
+// Time Complexity
+// Best Case, Average Case: O(n log n)
+// Worst Case: O(n²)
+
+// Space Complexity
+// Best Case, Average Case: O(log n) // For the recursive stack
+// Worst Case: O(n)  // For the recursive stack in unbalanced cases
+
 import java.util.Arrays;
 import java.util.Scanner;
 

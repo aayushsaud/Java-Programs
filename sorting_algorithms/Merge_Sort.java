@@ -1,3 +1,9 @@
+// Time Complexity
+// Best Case, Average Case, Worst Case: O(n log n)
+
+// Space Complexity
+// O(n)
+
 import java.util.Arrays;
 import java.util.Scanner;
 

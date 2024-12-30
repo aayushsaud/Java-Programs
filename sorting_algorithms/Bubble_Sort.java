@@ -1,3 +1,10 @@
+// Time Complexity
+// Best Case: O(n) // When the iterative is already sorted
+// Average Case, Worst Case: O(n²)
+
+// Space Complexity
+// O(1)
+
 import java.util.Arrays;
 import java.util.Scanner;
 
