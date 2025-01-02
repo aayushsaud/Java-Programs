@@ -25,7 +25,7 @@ public class Linear_Search {
 
         // Adding elements in the array
         for (int i = 0; i < n; i++) {
-            System.out.print("Enter the " + i + 1 + " element of the array: ");
+            System.out.print("Enter the " + i + " element of the array: ");
             array[i] = scanner.nextInt();
         }
 
