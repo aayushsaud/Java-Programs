@@ -7,7 +7,6 @@ public class Check_Palindrome {
         // Prompting the user for the input
         System.out.print("Enter a String: ");
         String string = scanner.nextLine().toLowerCase();
-        ;
 
         boolean isPalindrome = palindrome(string, 0);
 
