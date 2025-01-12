@@ -26,13 +26,13 @@ public class Largest_and_Smallest_in_Array {
 
         System.out.println("\nYour Array: " + Arrays.toString(array) + "\n");
 
-        int smallest = array[0];
-        int largest = array[0];
+        int smallest = Integer.MAX_VALUE;
+        int largest = Integer.MIN_VALUE;
 
         // Finding the smallest and largest numbers
-        for (int i = 1; i < size; i++) { // Start from index 1
-            if (array[i] < smallest) smallest = array[i];
-            if (array[i] > largest) largest = array[i];
+        for (int number : array) { // Start from index 1
+            if (number < smallest) smallest = number;
+            if (number > largest) largest = number;
         }
 
         System.out.println("The smallest number in your array is: " + smallest);
