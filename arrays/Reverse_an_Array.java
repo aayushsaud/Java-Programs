@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Reverse_an_Array {
     public static void main(String[] args) {
-    
+
         Scanner scanner = new Scanner(System.in);
 
         // Asking the user for the size of the array
@@ -18,18 +18,21 @@ public class Reverse_an_Array {
             array[i] = scanner.nextInt();
         }
 
-        int[] arrayReversed = new int[size];
+        System.out.println("Given Array: " + Arrays.toString(array));
 
-        int j = 0;
+        int i = 0;
+        int j = array.length - 1;
 
         // Reversing an Array
-        for (int i = size - 1; i >= 0; i--) {
-            arrayReversed[j] = array[i];
-            j++;
+        while (i < j) {
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+            i++;
+            j--;
         }
 
-        System.out.println("Your Array: " + Arrays.toString(array));
-        System.out.println("Reversed Array: " + Arrays.toString(arrayReversed));
+        System.out.println("Reversed Array: " + Arrays.toString(array));
         scanner.close();
     }
 }
