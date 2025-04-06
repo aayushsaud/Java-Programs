@@ -15,13 +15,16 @@ public class Prime_Numbers_Till_N {
         }        
 
         for (int i = 2; i <= number; i++) {
-            int count = 0;
-            for (int j = 1; j <= i; j++) {
+            boolean isPrime = true;
+            
+            for (int j = 2; j * j <= i; j++) {
                 if (i % j == 0) {
-                    count++;
+                    isPrime = false;
+                    break; 
                 }
             }
-            if (count == 2) {
+            
+            if (isPrime) {
                 System.out.println(i);
             }
         }
